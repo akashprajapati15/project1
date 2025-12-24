@@ -15,7 +15,7 @@ const ownerSchema = mongoose.Schema({
         type: Array,
         default: []
     },
-    contact: Number,
+    picture: String,
     gstin: String,
 
 
