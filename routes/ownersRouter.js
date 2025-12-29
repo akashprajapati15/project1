@@ -22,9 +22,15 @@ let createOwner = await ownerModel.create({
 });
 }
 
-router.get("/", function (req , res ){
-    res.send("helooooo owner");
+// router.get("/admin", function (req , res ){
+//     res.render("createproducts");
+// });
+
+router.get("/admin", (req, res) => {
+    let success =  req.flash("success");
+    res.render("createproducts", { success });
 });
+
 
 
 
